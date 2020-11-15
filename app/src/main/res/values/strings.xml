@@ -3,4 +3,8 @@
     <string name="numero">Número</string>
     <string name="adivinha">ADIVINHA</string>
     <string name="numero_adivinha">Qual o número que estou a pensar (entre 1 e 10)</string>
+    <string name="numero_invalido">Número inválido. Introduza um número entre 1 e 10</string>
+    <string name="acertou">Parabéns. Acertou!</string>
+    <string name="numero_maior">Estou a pensar num número maior.</string>
+    <string name="numero_menor">Estou a pensar num número menor.</string>
 </resources>
