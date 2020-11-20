@@ -10,13 +10,12 @@ import android.widget.TextView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    private Random random= new Random();
+    private Random random = new Random();
     private int numeroAdivinhar;
     private int tentativas;
 
     private EditText editTextNumero = null;
     private TextView textViewAcertou = null;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText getEditTextNumero() {
         if (editTextNumero == null) {
-            EditText editTextNumero = findViewById(R.id.editTextNumero);
+            editTextNumero =  findViewById(R.id.editTextNumero);
         }
 
-        return  editTextNumero;
+        return editTextNumero;
     }
 
     private TextView getTextViewAcertou() {
@@ -44,15 +43,14 @@ public class MainActivity extends AppCompatActivity {
             textViewAcertou = findViewById(R.id.textViewAcertou);
         }
 
-        return textViewAcertou;
+        return  textViewAcertou;
     }
 
     public void adivinha(View view) {
         int numero = getNumero();
 
         if (numero < 1 || numero > 10) {
-            EditText editTextNumero = getEditTextNumero();
-            editTextNumero.setError(getString(R.string.numero_invalido));
+            getEditTextNumero().setError(getString(R.string.numero_invalido));
             return;
         }
 
@@ -60,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
             getTextViewAcertou().setText(R.string.acertou);
         } else if (numero < numeroAdivinhar) {
             getTextViewAcertou().setText(R.string.numero_maior);
-        }
-        else {
+        } else {
             getTextViewAcertou().setText(R.string.numero_menor);
         }
     }
