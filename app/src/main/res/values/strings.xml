@@ -7,4 +7,6 @@
     <string name="acertou">Parabéns. Acertou!</string>
     <string name="numero_maior">Estou a pensar num número maior.</string>
     <string name="numero_menor">Estou a pensar num número menor.</string>
+    <string name="jogar_novamente">Pretende jogar novamente?</string>
+    <string name="tentativas">Tentativas:</string>
 </resources>
